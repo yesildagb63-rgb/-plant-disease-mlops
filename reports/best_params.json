@@ -1,0 +1,9 @@
+{
+  "best_val_acc": 0.9797047970479705,
+  "best_params": {
+    "lr": 0.0005611516415334506,
+    "batch_size": 16,
+    "rotation": 5,
+    "color_jitter": 0.062397808134481064
+  }
+}
