@@ -1,0 +1,19 @@
+data_dir: data/plantvillage
+classes:
+  - Tomato___healthy
+  - Tomato___Early_blight
+  - Tomato___Late_blight
+  - Tomato___Leaf_Mold
+  - Tomato___Septoria_leaf_spot
+processed_dir: data/processed
+split: [0.70, 0.15, 0.15]
+seed: 42
+img_size: 224
+batch_size: 32
+epochs: 3
+lr: 1.0e-3
+model: mobilenet_v3_small
+rotation: 15
+color_jitter: 0.2
+num_workers: 0
+mlflow_experiment: plant-disease

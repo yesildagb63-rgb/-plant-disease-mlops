@@ -1,0 +1,14 @@
+torch
+torchvision
+mlflow
+dvc
+onnx
+onnxruntime
+fastapi
+uvicorn
+gradio
+evidently
+pytest
+pillow
+pyyaml
+python-multipart

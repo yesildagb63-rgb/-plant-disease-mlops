@@ -1,0 +1,9 @@
+﻿data/*
+!data/*.dvc
+!data/.gitignore
+mlruns/
+mlflow.db
+models/
+__pycache__/
+.venv/
+.env
