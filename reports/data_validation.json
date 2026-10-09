@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "rows": 7223,
+  "per_class": {
+    "Tomato___Late_blight": 1909,
+    "Tomato___Septoria_leaf_spot": 1771,
+    "Tomato___healthy": 1591,
+    "Tomato___Early_blight": 1000,
+    "Tomato___Leaf_Mold": 952
+  },
+  "checks": {
+    "expect_table_row_count_to_be_between:table": true,
+    "expect_column_distinct_values_to_equal_set:label": true,
+    "expect_column_values_to_be_in_set:readable": true,
+    "expect_column_values_to_be_in_set:ext": true,
+    "expect_column_values_to_be_between:width": true,
+    "expect_column_values_to_be_between:height": true,
+    "expect_column_values_to_be_unique:md5": true
+  }
+}

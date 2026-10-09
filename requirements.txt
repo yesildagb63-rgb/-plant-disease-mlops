@@ -12,3 +12,4 @@ pytest
 pillow
 pyyaml
 python-multipart
+great_expectations

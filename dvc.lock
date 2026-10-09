@@ -8,6 +8,10 @@ stages:
       md5: 4c6795d1e239786cdd54c5129c9c77c7.dir
       size: 122165533
       nfiles: 7223
+    - path: reports/data_validation.json
+      hash: md5
+      md5: 61d87346ef4cae2a04c6dde7b975a4f1
+      size: 651
     - path: src/prepare_data.py
       hash: md5
       md5: f4daba8413d6372e9bda1986982fc249
@@ -64,3 +68,29 @@ stages:
       hash: md5
       md5: 9896be29153fab7f22e1544b15c44fa4
       size: 6247523
+  validate:
+    cmd: python src/validate_data.py
+    deps:
+    - path: data/plantvillage
+      hash: md5
+      md5: 4c6795d1e239786cdd54c5129c9c77c7.dir
+      size: 122165533
+      nfiles: 7223
+    - path: src/validate_data.py
+      hash: md5
+      md5: ad4c91e2e9cb0e5245800d39dc65feea
+      size: 2396
+    params:
+      config.yaml:
+        classes:
+        - Tomato___healthy
+        - Tomato___Early_blight
+        - Tomato___Late_blight
+        - Tomato___Leaf_Mold
+        - Tomato___Septoria_leaf_spot
+        data_dir: data/plantvillage
+    outs:
+    - path: reports/data_validation.json
+      hash: md5
+      md5: 61d87346ef4cae2a04c6dde7b975a4f1
+      size: 651

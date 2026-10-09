@@ -1,9 +1,23 @@
 stages:
+  validate:
+    cmd: python src/validate_data.py
+    deps:
+      - src/validate_data.py
+      - data/plantvillage
+    params:
+      - config.yaml:
+          - data_dir
+          - classes
+    metrics:
+      - reports/data_validation.json:
+          cache: false
+
   prepare:
     cmd: python src/prepare_data.py
     deps:
       - src/prepare_data.py
       - data/plantvillage
+      - reports/data_validation.json
     params:
       - config.yaml:
           - data_dir
