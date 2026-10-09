@@ -1,0 +1,36 @@
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+      - src/prepare_data.py
+      - data/plantvillage
+    params:
+      - config.yaml:
+          - data_dir
+          - processed_dir
+          - classes
+          - split
+          - seed
+    outs:
+      - data/processed
+
+  train:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - data/processed
+    params:
+      - config.yaml:
+          - img_size
+          - batch_size
+          - epochs
+          - lr
+          - model
+          - rotation
+          - color_jitter
+          - seed
+    outs:
+      - models/model.pt
+    metrics:
+      - metrics.json:
+          cache: false

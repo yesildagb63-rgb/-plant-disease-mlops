@@ -1,4 +1,5 @@
 import os
+import json
 import numpy as np
 import yaml
 import torch
@@ -71,6 +72,7 @@ def main():
         _, ta = evaluate(test_dl)
         mlflow.log_metric("test_acc", ta)
         print(f"test_acc={ta:.4f}")
+        json.dump({"val_loss": vl, "val_acc": va, "test_acc": ta}, open("metrics.json", "w"), indent=2)
         model.cpu()
         os.makedirs("models", exist_ok=True)
         torch.save(model, "models/model.pt")
