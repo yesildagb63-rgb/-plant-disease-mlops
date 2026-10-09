@@ -17,3 +17,7 @@ rotation: 15
 color_jitter: 0.2
 num_workers: 0
 mlflow_experiment: plant-disease
+registered_model: plant-disease
+tune:
+  n_trials: 6
+  epochs: 1
