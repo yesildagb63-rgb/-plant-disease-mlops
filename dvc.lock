@@ -94,3 +94,28 @@ stages:
       hash: md5
       md5: 61d87346ef4cae2a04c6dde7b975a4f1
       size: 651
+  export:
+    cmd: python src/export_onnx.py
+    deps:
+    - path: models/model.pt
+      hash: md5
+      md5: c48cce4336f5a6da296d9d5dbda04461
+      size: 6247523
+    - path: src/export_onnx.py
+      hash: md5
+      md5: 54c524965ad552136aa0d25a24964c6d
+      size: 1229
+    params:
+      config.yaml:
+        classes_path: models/classes.json
+        img_size: 224
+        onnx_path: models/model.onnx
+    outs:
+    - path: models/classes.json
+      hash: md5
+      md5: fe40069a150cfb0187fd085873ee4c73
+      size: 140
+    - path: models/model.onnx
+      hash: md5
+      md5: 75e69e131836c2a511d06e42878d44c7
+      size: 6101547

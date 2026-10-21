@@ -21,3 +21,6 @@ registered_model: plant-disease
 tune:
   n_trials: 6
   epochs: 1
+onnx_path: models/model.onnx
+classes_path: models/classes.json
+confidence_threshold: 0.6

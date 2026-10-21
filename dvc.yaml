@@ -48,3 +48,17 @@ stages:
     metrics:
       - metrics.json:
           cache: false
+
+  export:
+    cmd: python src/export_onnx.py
+    deps:
+      - src/export_onnx.py
+      - models/model.pt
+    params:
+      - config.yaml:
+          - img_size
+          - onnx_path
+          - classes_path
+    outs:
+      - models/model.onnx
+      - models/classes.json
