@@ -24,3 +24,5 @@ tune:
 onnx_path: models/model.onnx
 classes_path: models/classes.json
 confidence_threshold: 0.6
+llm_model: gemini-3.5-flash-lite
+log_dir: log

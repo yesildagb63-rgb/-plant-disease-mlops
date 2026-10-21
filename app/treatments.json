@@ -1,0 +1,50 @@
+{
+  "Tomato___Early_blight": {
+    "name": "Erken yanıklık (Alternaria)",
+    "treatment": [
+      "Lekeli alt yaprakları koparıp tarladan uzaklaştırın; kompost yapmayın.",
+      "Yaprakları ıslatmayın, sulamayı dipten ve sabah yapın.",
+      "Toprağı malçla örtün; sıçrayan su hastalığı yaprağa taşır.",
+      "Ertesi yıl aynı yere domates, biber, patlıcan dikmeyin (ekim nöbeti).",
+      "Yayılırsa bakırlı ya da ruhsatlı bir fungisit için ziraat mühendisine danışın."
+    ]
+  },
+  "Tomato___Late_blight": {
+    "name": "Geç yanıklık (Phytophthora)",
+    "treatment": [
+      "Hızlı yayılır: hastalıklı bitkileri hemen sökün, poşetleyip imha edin.",
+      "Bitkileri kompost yapmayın, yere bırakmayın.",
+      "Yaprak ıslaklığını azaltın; sabah sulayın, bitkiler arasında hava akışı bırakın.",
+      "Sağlam bitkileri koruyucu (bakırlı) ilaçla korumak için uzmana danışın.",
+      "Komşu tarlaları da uyarın; hastalık rüzgârla taşınabilir."
+    ]
+  },
+  "Tomato___Leaf_Mold": {
+    "name": "Yaprak küfü",
+    "treatment": [
+      "Genelde serada, yüksek nemde görülür: havalandırmayı artırın.",
+      "Nem oranını düşürün; bitkileri sık dikmeyin.",
+      "Küflü yaprakları toplayıp imha edin.",
+      "Bir sonraki ekimde dayanıklı çeşit tercih edin.",
+      "Gerekirse uygun bir fungisit için ziraat mühendisine danışın."
+    ]
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "name": "Septorya yaprak lekesi",
+    "treatment": [
+      "Lekeli alt yaprakları erkenden koparın.",
+      "Yaprakları ıslatmayın, toprağı malçla örtün.",
+      "Hasattan sonra bitki artıklarını tarladan temizleyin.",
+      "1-2 yıl ekim nöbeti uygulayın.",
+      "Yayılırsa uygun bir fungisit için ziraat mühendisine danışın."
+    ]
+  },
+  "Tomato___healthy": {
+    "name": "Sağlıklı",
+    "treatment": [
+      "Yaprak sağlıklı görünüyor, müdahale gerekmiyor.",
+      "Haftada bir yaprakları kontrol etmeye devam edin.",
+      "Sulamayı dipten yapın, yaprakları ıslatmayın."
+    ]
+  }
+}

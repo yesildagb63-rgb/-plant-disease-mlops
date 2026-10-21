@@ -1,0 +1,4 @@
+timestamp,source,image,class,confidence,confident
+2026-10-21T12:19:39,ui,20261021_121939_346673_Tomato___Early_blight.jpg,Tomato___Early_blight,0.9991,True
+2026-10-21T12:20:56,ui,20261021_122056_262719_Tomato___Septoria_leaf_spot.jpg,Tomato___Septoria_leaf_spot,1.0,True
+2026-10-21T12:24:08,ui,20261021_122408_250222_Tomato___healthy.jpg,Tomato___healthy,1.0,True
