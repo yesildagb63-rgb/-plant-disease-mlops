@@ -51,22 +51,22 @@ stages:
       size: 4305
     params:
       config.yaml:
-        batch_size: 32
-        color_jitter: 0.2
+        batch_size: 16
+        color_jitter: 0.06
         epochs: 3
         img_size: 224
-        lr: 0.001
+        lr: 0.00056
         model: mobilenet_v3_small
-        rotation: 15
+        rotation: 5
         seed: 42
     outs:
     - path: metrics.json
       hash: md5
-      md5: 9874873180086d52a88712ea26d2cf52
-      size: 107
+      md5: 49fb0ed60aed4ba16059077e78a688f8
+      size: 108
     - path: models/model.pt
       hash: md5
-      md5: 9896be29153fab7f22e1544b15c44fa4
+      md5: c48cce4336f5a6da296d9d5dbda04461
       size: 6247523
   validate:
     cmd: python src/validate_data.py
